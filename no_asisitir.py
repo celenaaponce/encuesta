@@ -75,7 +75,14 @@ with placeholder.container():
             text = send_email(sender = "celena.a.ponce@gmail.com", password = "itsn tbct owcx rbnh", receiver = "celena.a.ponce@gmail.com", smtp_server = "smtp.gmail.com", smtp_port = 587, email_message = variable, subject = "")
 
             placeholder.empty()
-
+css="""
+<style>
+    [data-testid="stForm"] {
+        background: LightBlue;
+    }
+</style>
+"""
+st.write(css, unsafe_allow_html=True)
 if submitted:
     with placeholder.container():
         st.write(text)
