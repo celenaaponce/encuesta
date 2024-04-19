@@ -61,8 +61,6 @@ with placeholder.container():
         survey.text_input("Nombre y correo electronico (opcional):", id='Q6')
         submitted = st.form_submit_button("Entregar")
         if submitted:
-
-
             answers = survey.to_json()
             text = []
             dict_obj = json.loads(answers)
@@ -70,8 +68,6 @@ with placeholder.container():
                         + "\nNo schedule " +dict_obj['Q3']['value']+ "\nNot lke " + dict_obj['Q4']['value']
                         + "More info " + dict_obj['Q5']['value'] + "Name " + dict_obj['Q6']['value'])
             variable = "\n".join(text)
-
-            st.write(answers)
             text = send_email(sender = "celena.a.ponce@gmail.com", password = "itsn tbct owcx rbnh", receiver = "celena.a.ponce@gmail.com", smtp_server = "smtp.gmail.com", smtp_port = 587, email_message = variable, subject = "")
 
             placeholder.empty()
@@ -85,6 +81,5 @@ css="""
 st.write(css, unsafe_allow_html=True)
 if submitted:
     with placeholder.container():
-        st.write(text)
         st.balloons()
         st.header("¡Gracias por su respuesta!")
