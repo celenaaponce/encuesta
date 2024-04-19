@@ -51,7 +51,10 @@ with placeholder.container():
         survey.select_slider(
             "", options=["Muy de Acuerdo 👍🏽👍🏽", "Algo de Acuerdo 👍🏽", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo 👎🏽", "Muy en Desacuerdo 👎🏽👎🏽"], id="Q4"
         )
+        st.header('')
+        st.header('')
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/additional.mp3')
+
         survey.text_input('Información Addiccional:', id='Q5')
         survey.text_input("Nombre y correo electronico (opcional):", id='Q6')
         submitted = st.form_submit_button("Entregar")
