@@ -55,7 +55,9 @@ with placeholder.container():
         st.header('')
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/additional.mp3')
 
-        survey.text_input('Información Addiccional:', id='Q5')
+        survey.text_area('Información Addiccional:', id='Q5')
+        st.header('')
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/nombre.mp3')
         survey.text_input("Nombre y correo electronico (opcional):", id='Q6')
         submitted = st.form_submit_button("Entregar")
         if submitted:
