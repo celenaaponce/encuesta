@@ -30,7 +30,7 @@ with placeholder.container():
         st.markdown('<p class="big-font">Tengo que trabajar durante la clase.</p>', unsafe_allow_html=True)
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/trabajar.mp3')
         survey.select_slider(
-            "Trabajar", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q1", label_visibility="hidden"
+            "Trabajar", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q1", label_visibility="hidden", value="Ni de Acuerdo Ni en Desacuerdo"
         )
         st.header('')
         st.markdown('<p class="big-font">No tengo interés en la clase.</p>', unsafe_allow_html=True)
