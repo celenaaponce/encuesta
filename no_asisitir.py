@@ -36,20 +36,20 @@ with placeholder.container():
         st.markdown('<p class="big-font">No tengo interés en la clase.</p>', unsafe_allow_html=True)
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/interest.mp3')
         survey.select_slider(
-            "Interes", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q2", label_visibility="hidden"
+            "Interes", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q2", label_visibility="hidden", value="Ni de Acuerdo Ni en Desacuerdo"
         )
         st.header('')
         st.markdown('<p class="big-font">No recibí información del horario.</p>', unsafe_allow_html=True)
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/schedule.mp3')
         survey.select_slider(
-            "Informacion", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q3", label_visibility="hidden"
+            "Informacion", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q3", label_visibility="hidden", value="Ni de Acuerdo Ni en Desacuerdo"
         )
         st.header('')
         st.markdown('<p class="big-font">No me gusta cómo enseñan la clase.</p>', unsafe_allow_html=True)
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/teach.mp3')
 
         survey.select_slider(
-            "Clase", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q4", label_visibility="hidden"
+            "Clase", options=["Muy de Acuerdo ", "Algo de Acuerdo ", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo ", "Muy en Desacuerdo "], id="Q4", label_visibility="hidden", value="Ni de Acuerdo Ni en Desacuerdo"
         )
         st.header('')
         st.header('')
