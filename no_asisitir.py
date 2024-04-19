@@ -23,10 +23,10 @@ survey = ss.StreamlitSurvey()
 with placeholder.container():
 
     with st.form("Clases de ASL"):
-        st.audio('https://raw.githubusercontent.com/celenaaponce/sandbox/main/additional.mp3')
+        
         st.subheader("¡Hola!  Le he enviado esta encuesta a usted porque usted le ha registrado para las clases de Lengua de Señas en Español y no ha asistido a las clases." 
               + "Para mejorar mis clases, quiero saber más sobre la razon por la que no ha asistido.  Gracias por su tiempo e información.")
-
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/answeroptions.mp3')
         st.markdown('<p class="big-font">Tengo que trabajar durante la clase.</p>', unsafe_allow_html=True)
 
         survey.select_slider(
@@ -34,20 +34,24 @@ with placeholder.container():
         )
         st.header('')
         st.markdown('<p class="big-font">No tengo interés en la clase.</p>', unsafe_allow_html=True)
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/interest.mp3')
         survey.select_slider(
             "", options=["Muy de Acuerdo", "Algo de Acuerdo", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo", "Muy en Desacuerdo"], id="Q2"
         )
         st.header('')
         st.markdown('<p class="big-font">No recibí información del horario.</p>', unsafe_allow_html=True)
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/interest.mp3')
         survey.select_slider(
             "No recibí información del horario.", options=["Muy de Acuerdo", "Algo de Acuerdo", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo", "Muy en Desacuerdo"], id="Q3"
         )
         st.header('')
-        st.markdown('<p class="big-font">No me gusta como enseñan la clase.</p>', unsafe_allow_html=True)
+        st.markdown('<p class="big-font">No me gusta cómo enseñan la clase.</p>', unsafe_allow_html=True)
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/teach.mp3')
 
         survey.select_slider(
-            "No me gusta como enseñan la clase.", options=["Muy de Acuerdo", "Algo de Acuerdo", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo", "Muy en Desacuerdo"], id="Q4"
+            "", options=["Muy de Acuerdo", "Algo de Acuerdo", "Ni de Acuerdo Ni en Desacuerdo", "Algo en Desacuerdo", "Muy en Desacuerdo"], id="Q4"
         )
+        st.audio('https://github.com/celenaaponce/encuesta/raw/main/additional.mp3')
         survey.text_input('Información Addiccional:', id='Q5')
         survey.text_input("Nombre y correo electronico (opcional):", id='Q6')
         submitted = st.form_submit_button("Entregar")
