@@ -25,7 +25,7 @@ with placeholder.container():
     with st.form("Clases de ASL"):
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/opening.mp3')        
         st.subheader("¡Hola!  Le he enviado esta encuesta a usted porque usted le ha registrado para las clases de Lengua de Señas en Español y no ha asistido a las clases." 
-              + "Para mejorar mis clases, quiero saber más sobre la razon por la que no ha asistido.  Gracias por su tiempo e información.")
+              + "  Para mejorar mis clases, quiero saber más sobre la razon por la que no ha asistido.  Gracias por su tiempo e información.")
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/answeroptions.mp3')
         st.markdown('<p class="big-font">Tengo que trabajar durante la clase.</p>', unsafe_allow_html=True)
         st.audio('https://github.com/celenaaponce/encuesta/raw/main/trabajar.mp3')
