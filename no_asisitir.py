@@ -66,7 +66,7 @@ with placeholder.container():
             dict_obj = json.loads(answers)
             text.append("I have to work " + dict_obj['Q1']['value'] + "\nNot interested " +dict_obj['Q2']['value'] 
                         + "\nNo schedule " +dict_obj['Q3']['value']+ "\nNot like " + dict_obj['Q4']['value']
-                        + "More info " + dict_obj['Q5']['value'] + "Name " + dict_obj['Q6']['value'])
+                        + "\nMore info " + dict_obj['Q5']['value'] + "\nName " + dict_obj['Q6']['value'])
             variable = "\n".join(text)
             text = send_email(sender = "celena.a.ponce@gmail.com", password = "itsn tbct owcx rbnh", receiver = "celena.a.ponce@gmail.com", smtp_server = "smtp.gmail.com", smtp_port = 587, email_message = variable, subject = "")
 
